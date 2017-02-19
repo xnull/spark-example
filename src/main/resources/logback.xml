@@ -1,0 +1,13 @@
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yy/MM/dd HH:mm:ss.SSS} %-5level %-10.10thread | %20.20logger{20} %10.10(%M:%L) | %message%n%xException
+            </pattern>
+        </encoder>
+    </appender>
+
+    <root level="error">
+        <appender-ref ref="stdout"/>
+    </root>
+
+</configuration>
